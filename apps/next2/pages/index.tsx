@@ -1,4 +1,4 @@
-import { SignedIn, SignedOut, SignInButton, useUser } from '@clerk/nextjs';
+import { SignedIn, SignedOut, SignIn, SignInButton, useUser } from '@clerk/nextjs';
 import styles from './index.module.css';
 
 export function Index() {
@@ -15,14 +15,14 @@ export function Index() {
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
-              Welcome next1 👋
+              Welcome next2 👋
             </h1>
           </div>
           <SignedIn>
             <div>Hello! {user?.firstName}</div>
           </SignedIn>
           <SignedOut>
-            <SignInButton></SignInButton>
+            <SignIn></SignIn>
           </SignedOut>
 
           <div id="hero" className="rounded">

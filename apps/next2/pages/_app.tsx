@@ -7,7 +7,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <ClerkProvider {...pageProps} >
       <Head>
-        <title>Welcome to next1!</title>
+        <title>Welcome to next2!</title>
       </Head>
       <main className="app">
         <Component {...pageProps} />
